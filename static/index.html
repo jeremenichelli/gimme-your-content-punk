@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gimme your content punk! - BuzzFeedJS</title>
+  <meta name="description" content="Small web to showcase the benefits of font loading strategies.">
+
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 18px;
+      line-height: 1.75;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Helvetica, Arial, sans-serif;
+      line-height: 1.25;
+    }
+
+    a {
+      color: red;
+      text-decoration: none
+    }
+
+    .logo {
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    a,
+    .logo:hover {
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0 0 2em;
+    }
+
+    h2 {
+      margin: 2em 0 1em;
+    }
+
+    .excerpt {
+      color: #606060;
+      font-size: 20px;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 40em;
+      padding: 2em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    code {
+      font-family: Monaco, monospace;
+      font-size: 15px;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">BuzzFeedJS</a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Small web to showcase the benefits of font loading strategies</h1>
+      <p class="excerpt">You won't believe how little your users care about your web font choices.</p>
+      <p>Here you have two pages, one with a font loading strategy, and another one without it:</p>
+      <ul>
+        <li>
+          <h4>
+          <a href="/optimized">Article <strong>with</strong> a font loading strategy</a> 👏
+          </h4>
+        </li>
+        <li>
+          <h4>
+            <a href="/unoptimized">Article <strong>without</strong> a font loading strategy</a> 💩
+          </h4>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p class="rights">Created with ❤️ by&nbsp;<a href="https://jeremenichelli.io" ref="nofollow">Jeremias&nbsp;Menichelli</a></p>
+    </div>
+  </footer>
+</body>
+</html>

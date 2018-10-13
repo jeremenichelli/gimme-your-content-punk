@@ -1,0 +1,5 @@
+# ignore generated assets
+assets
+
+# ignore node modules
+node_modules

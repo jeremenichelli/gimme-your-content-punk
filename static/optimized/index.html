@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Article with a font loading strategy - BuzzFeedJS</title>
+  <meta name="description" content="Small web to showcase the benefits of font loading strategies.">
+
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 18px;
+      line-height: 1.75;
+      margin: 0;
+      padding: 0;
+    }
+
+    .lora-ready {
+      font-family: 'Lora', serif;
+    }
+
+    h1, h2 {
+      font-family: Helvetica, Arial, sans-serif;
+      line-height: 1.25;
+    }
+
+    .source-sans-ready h1,
+    .source-sans-ready h2 {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    a {
+      color: red;
+      text-decoration: none
+    }
+
+    .logo {
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      display: block;
+      height: 32px;
+      line-height: 32px;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    a,
+    .logo:hover {
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0 0 2em;
+    }
+
+    h2 {
+      margin: 2em 0 1em;
+    }
+
+    .excerpt {
+      color: #606060;
+      font-size: 20px;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 40em;
+      padding: 2em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    code {
+      font-family: Monaco, monospace;
+      font-size: 15px;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">BuzzFeedJS</a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>This Man Says <span class="underline">You Don't Need React</span>, Use These 3000 Lines Instead</h1>
+      <p class="excerpt">
+        Of course <span class="underline">this headline is a completely clickbait thing</span>, but also a real tweet from a Twitter account parody, check out the tweet <a href="https://twitter.com/BuzzFeedJS/status/636584170958012416" rel="nofollow">here</a>.
+      </p>
+      <p>This page doesn't talk about which framework you should use. <span class="underline">It's here to show front end developers how to load web fonts</span> without blocking content from their users, specially to those with a really bad Wi-Fi or mobile connection.</p>
+      <h2>What you should do</h2>
+      <ul>
+        <li>In your CSS, use a fallback font family by default and swap later to your web font.</li>
+        <li>Use <code>fontfaceobserver</code> by Bram Stein to do the <em>swap</em> when the font is ready.</li>
+        <li>Host your own fonts and use <code>font-display</code> when supported.</li>
+        <li>Use <code>glyphhanger</code> by Filament Group to create subset font files containing only the unicode range you need for your site.</li>
+        <li>Use <code>preload</code> to minimize the <em>FOUT</em>.</li>
+        <li>Use <code>.woff2</code> format, it has better compression.</li>
+      </ul>
+      <h2>Recommended articles and resources</h2>
+      <ul>
+        <li><a href="https://www.zachleat.com/web/fonts/" rel="nofollow">All web fonts articles</a> by Zach Leatherman.</li>
+        <li><a href="https://meowni.ca/posts/web-fonts/" rel="nofollow">Web fonts, boy, I don't know</a> by Monica Dinculescu.</li>
+        <li><a href="https://developers.google.com/web/updates/2016/02/font-display" rel="nofollow">Controlling Font Performance with font-display</a> by Rob Dodson.</li>
+        <li><a href="https://www.filamentgroup.com/lab/font-events.html" rel="nofollow">How we load web fonts progressively</a> by Filament Group.</li>
+        <li>In addition I wrote two articles, <a href="https://jeremenichelli.io/2016/05/font-loading-strategy-static-generated-sites/" rel="nofollow">Font loading strategy for static generated sites</a> and <a href="https://jeremenichelli.io/2018/07/font-loading-strategy-single-page-applications/" rel="nofollow">Font loading strategy for single page applications</a> in my blog.</li>
+      </ul>
+      <h2>Credits</h2>
+      <p>⚡️ This page was created to show the effects of having (and not having) a font loading strategy on a lightning talk I gave in the 2018 edition of dotJS.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p class="rights">Created with ❤️ by&nbsp;<a href="https://jeremenichelli.io" ref="nofollow">Jeremias&nbsp;Menichelli</a></p>
+    </div>
+  </footer>
+  <script src="/assets/js/font.js"></script>
+</body>
+</html>
