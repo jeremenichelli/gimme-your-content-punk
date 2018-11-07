@@ -10,7 +10,7 @@ _[Node](https://nodejs.org) and [yarn](https://yarnpkg.com/lang/en/) are require
   - In the root folder of the project run `yarn`.
   - With `yarn bundle` a `font.js` is created for the optimized page.
   - Finally `yarn serve` will start a server at port `5000` with the project.
-  - At the index of the site, you will find links for both optimized and unoptimized cases. _It's recommended to open the pages with network and CPU throttling to emulate a mobile slow connection and see it effects on users._
+  - At the index of the site, you will find links for both optimized and unoptimized cases. _It's **recommended** to open the pages with network and CPU throttling to emulate a mobile slow connection._
 
 ## Resources
 
